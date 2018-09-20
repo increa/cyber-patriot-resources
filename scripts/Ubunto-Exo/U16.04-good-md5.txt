@@ -1,0 +1,3 @@
+d1327950a28febc67ca1ffd1f33b05cf  /bin/bash
+dba3c4ecc43dd59723b907390f750702  /bin/ps
+5321089c116fe87f9e3e1a861cd7ae4a  /bin/netstat
