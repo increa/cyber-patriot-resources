@@ -1,0 +1,14 @@
+Cyber Patriot Linux folks,
+
+I think I figured out how to quickly search any directory and subdirectory for unauthorized file types using native bash, even when they are renamed or compressed.
+
+$ sudo find . -type f -iname "*" | file -Nz -f - | grep -f ~/badtypes.txt
+
+Just put anything you want to find in the text file badtypes.txt, such as JPEG
+MP4
+{or more..}
+
+Test it out and let me know if you find any issues.
+
+If you want to find any other type of fingerprint in files, you can specify the byte sequence pretty easily in the file command magic file.  Just Google "linux file command magic"
+
